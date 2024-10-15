@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="300"
+   height="300"
+   viewBox="0 0 79.374998 79.375"
+   version="1.1"
+   id="svg4205"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="measurements.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title4580">Cone measurements</title>
+  <sodipodi:namedview
+     id="namedview4207"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="1.6961841"
+     inkscape:cx="138.54628"
+     inkscape:cy="149.15834"
+     inkscape:window-width="1366"
+     inkscape:window-height="683"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs4202" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#ff00ff;stroke-width:0.263088"
+       d="M 71.553656,48.503429 C 39.943183,39.756805 39.678466,39.683558 39.678466,39.683558"
+       id="radius"
+       inkscape:label="radius" />
+    <path
+       style="fill:#ff8080;stroke:none;stroke-width:0.294485"
+       d="M 150.76078,85.637636 V 25.899048 l 4.52955,0.195305 c 19.25713,0.830329 39.65192,6.227899 56.46623,15.952529 3.61186,2.088935 10.39322,6.586196 10.39659,6.865526 0.27714,0.109206 -15.84629,22.08276 -34.68146,48.587277 -31.70036,44.608185 -36.66211,52.487585 -36.77905,51.725445 l -0.13049,-0.85044 z"
+       id="sectorFill"
+       transform="scale(0.26458333)"
+       inkscape:label="sectorFill"
+       sodipodi:nodetypes="ccsscsscc">
+      <desc
+         id="desc614">Area between rays s1 and s2, which is removed from the circle so that a cone can be formed.</desc>
+      <title
+         id="title5201">Removed sector</title>
+    </path>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264319"
+       d="m 39.824617,31.078051 c 2.652395,0 4.934321,1.790199 4.934321,1.790199"
+       id="angle" />
+    <g
+       id="sector"
+       inkscape:label="sector"
+       style="fill:none">
+      <path
+         style="fill:none;stroke:#0000ff;stroke-width:0.263088"
+         d="m 39.819659,6.6145832 c 0,32.7982518 0,33.0729158 0,33.0729158"
+         id="sectorEdge2"
+         inkscape:label="sectorEdge2">
+        <title
+           id="title612">Sector edge, s2</title>
+      </path>
+      <path
+         style="fill:none;stroke:#0000ff;stroke-width:0.263088"
+         d="M 58.922416,12.846085 C 39.924767,39.58211 39.765674,39.806007 39.765674,39.806007"
+         id="sectorEdge1"
+         inkscape:label="sectorEdge1">
+        <title
+           id="title610">Sector edge, s1</title>
+      </path>
+    </g>
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:0.269182"
+       id="circle"
+       cx="39.6875"
+       cy="39.6875"
+       r="32.938324" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#000000;stroke:#000000;stroke-width:0.264319"
+       x="41.845142"
+       y="28.447594"
+       id="text5286"><tspan
+         sodipodi:role="line"
+         id="tspan5284"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:math;-inkscape-font-specification:'math Italic';fill:#000000;stroke-width:0.264319"
+         x="41.845142"
+         y="28.447594">θ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:math;-inkscape-font-specification:'math Italic';fill:#ff00ff;stroke:#ff00ff;stroke-width:0.264319"
+       x="38.113224"
+       y="49.033867"
+       id="text6239"><tspan
+         sodipodi:role="line"
+         id="tspan6237"
+         style="fill:#ff00ff;stroke:#ff00ff;stroke-width:0.264319"
+         x="38.113224"
+         y="49.033867">r <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:math;-inkscape-font-specification:math"
+   id="tspan368">= 75 mm</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:math;-inkscape-font-specification:math;fill:#0000ff;stroke:#0000ff;stroke-width:0.264319"
+       x="50.266327"
+       y="28.804047"
+       id="text410"><tspan
+         sodipodi:role="line"
+         id="tspan408"
+         style="stroke-width:0.264319;fill:#0000ff;stroke:#0000ff"
+         x="50.266327"
+         y="28.804047"><tspan
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:math;-inkscape-font-specification:'math Italic';fill:#0000ff;stroke:#0000ff"
+           id="tspan414">r</tspan><tspan
+           style="font-size:65%;baseline-shift:sub;fill:#0000ff;stroke:#0000ff"
+           id="tspan412">1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:math;-inkscape-font-specification:math;fill:#0000ff;stroke:#0000ff;stroke-width:0.264319"
+       x="35.254925"
+       y="22.691656"
+       id="text410-3"><tspan
+         sodipodi:role="line"
+         id="tspan408-6"
+         style="fill:#0000ff;stroke:#0000ff;stroke-width:0.264319"
+         x="35.254925"
+         y="22.691656"><tspan
+           style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:math;-inkscape-font-specification:'math Italic';fill:#0000ff;stroke:#0000ff"
+           id="tspan414-7">r</tspan><tspan
+           style="font-size:65%;baseline-shift:sub"
+           id="tspan581">2</tspan></tspan></text>
+  </g>
+  <metadata
+     id="metadata4578">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Cone measurements</dc:title>
+        <dc:date>2024-10-14</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Zac Sayle</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

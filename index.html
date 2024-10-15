@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Use MathJax because native ChromeOS has poor support for math fonts -->
+    <title>Paper cones and drag</title>
+</head>
+
+
+<body>
+    <h1>Paper cones and drag</h1>
+    <p>by Zac Sayle - Year 12 Physics 2024</p>
+    <h2>Introduction</h2>
+    <p>Drag on objects is affected by several factors, namely the density of the fluid they are travelling through
+        (<math>
+            <mi>&rho;</mi>
+        </math>), their relative velocity (<math>
+            <mi>v</mi>
+        </math>), and their cross-sectional area (<math>
+            <mi>A</mi>
+        </math>).</p>
+    <p>These are related by the formulas</p>
+    <math display="block">
+        <msub>
+            <mi>F</mi>
+            <mi>D</mi>
+        </msub>
+        <mo>=</mo>
+        <mfrac>
+            <mrow>
+                <mn>1</mn>
+            </mrow>
+            <mrow>
+                <mn>2</mn>
+            </mrow>
+        </mfrac>
+        <mi>&rho;</mi>
+        <msup>
+            <mi>v</mi>
+            <mn>2</mn>
+        </msup>
+        <msub>
+            <mi>C</mi>
+            <mi>D</mi>
+        </msub>
+        <mi>A</mi>
+    </math>
+    <p>and</p>
+    <math display="block">
+        <mi>&rho;</mi>
+        <mo>=</mo>
+        <mfrac>
+            <mrow>
+                <mi>p</mi>
+            </mrow>
+            <mrow>
+                <msub>
+                    <mi>R</mi>
+                    <mi>specific</mi>
+                </msub>
+                <mi>T</mi>
+            </mrow>
+        </mfrac>
+    </math>
+    <p>To determine how the size of a paper cone affected its drag, cones were made from circles of equal radii, but
+        with different central angles for removed sectors. The time to fall a set distance was measured, which could
+        then be used to calculate the average velocity, <math>
+            <mi>v</mi>
+        </math>, drag force, <math>
+            <msub>
+                <mi>F</mi>
+                <mi>D</mi>
+            </msub>
+        </math>, and drag coefficient, <math>
+            <msub>
+                <mi>C</mi>
+                <mi>D</mi>
+            </msub>
+        </math>. For the other variables not already stated, <math>
+            <mi>p</mi>
+        </math> is the absolute pressure of the air, <math>
+            <msub>
+                <mi>R</mi>
+                <mi>specific</mi>
+            </msub>
+        </math> is the specific gas constant of air, and <math>
+            <mi>T</mi>
+        </math> is the absolute temperature of the air.</p>
+    <p>While there have already been investigations into the most aerodynamic shapes for flight, this investigation
+        could theoretically contribute to ensuring that those results remain valid for conical nose shapes.</p>
+    <h3>Hypothesis</h3>
+    <p>It is hypothesised that as the angle removed from the circle increases, fall time will decrease, because this
+        change decreases the cross-sectional area, <math>
+            <mi>A</mi>
+        </math>. This also follows logical reasoning based on previous experience with letting things fall, especially
+        considering the design of parachutes.</p>
+    <p></p>
+    <h2>Methodology</h2>
+    <h3>Equipment</h3>
+    <ul>
+        <li>Paper (approx 73.8 g&middot;m<sup>-2</sup> was used)</li>
+        <li>Scissors</li>
+        <li>Sticky tape</li>
+        <li>Protractor</li>
+        <li>Compass &amp; pencil</li>
+        <li>Scales</li>
+        <li>Stopwatch &amp; video camera</li>
+        <li>Ruler</li>
+        <li>Thermometer</li>
+        <li>Barometer</li>
+    </ul>
+    <h3>Steps</h3>
+    <ol>
+        <li>Circles with equal radii were cut from similar pieces of paper</li>
+        <li>A sector was cut from each circle, with the angle recorded. The remaining part of the circle was bent and
+            taped into a conical shape. Six unique angles were used for this experiment, with the sector angles listed
+            in the <a href="#results-combined">results</a>.</li>
+        <details>
+            <summary>Circle dimensions and cone construction diagram</summary>
+            <figure>
+                <img src="img/measurements.svg" alt="Diagram of circle measurements" />
+                <figcaption>Measurements used in the creation of the cone from the circle.<br /><math>
+                        <mi>&theta;</mi>
+                    </math> represents the angle of the removed sector, as referred to in the data.<br />The <span
+                        id="sector-red-ref">red sector</span> is removed, and <math>
+                        <msub>
+                            <mi>r</mi>
+                            <mn>1</mn>
+                        </msub>
+                    </math> and <math>
+                        <msub>
+                            <mi>r</mi>
+                            <mn>2</mn>
+                        </msub>
+                    </math> are joined to form the cone.</figcaption>
+            </figure>
+        </details>
+        <li>A small (known) mass was placed into the first cone</li>
+        <li>The first cone was dropped (tip-down) from the set 1.5&nbsp;m drop height (based on its tip's position).
+            The
+            time for the cone to touch the ground from release was measured with a stopwatch, and the drop was filmed
+            with a video camera, providing an alternative method for finding the drop time. This was repeated for at
+            least three trials with each cone</li>
+        <li>Steps 3 & 4 were repeated with the remaining cones</li>
+        <li>After all trials were completed, the videos were analysed in a video player, by counting the number of
+            frames between the release of the cone and it first making contact with the ground, and then multiplying by
+            the frame rate recorded in the metadata</li>
+    </ol>
+    <details>
+        <summary>Experimental setup diagram</summary>
+        <figure>
+            <img src="img/setup.svg" alt="Experimental setup diagram" />
+            <figcaption>Diagram of the experimental setup. Time to fall distance <math>
+                    <mi>s</mi>
+                </math> was measured.</figcaption>
+        </figure>
+    </details>
+    <h3>Maintaining controlled variables</h3>
+    <a href="#other-data">Jump to data collected about controlled variables</a>
+    <p>In order to maintain the controlled variables, the following steps were taken:</p>
+    <ul>
+        <li>Care was taken to drop the cones from a stationary position (so <math>
+                <mi>u</mi>
+                <mo>=</mo>
+                <mn>0</mn>
+            </math>, and <math>
+                <msub>
+                    <mi>F</mi>
+                    <mi>&downarrow;</mi>
+                </msub>
+                <mo>=</mo>
+                <mi>m</mi>
+                <mo>&InvisibleTimes;</mo>
+                <mi>g</mi>
+            </math>)</li>
+        <li>Each trial was conducted within the same room to ensure that the conditions of the air remained consistent,
+            controlling <math>
+                <mi>p</mi>
+            </math>, <math>
+                <msub>
+                    <mi>R</mi>
+                    <mi>specific</mi>
+                </msub>
+            </math>, <math>
+                <mi>T</mi>
+            </math>, and thus <math>
+                <mi>&rho;</mi>
+            </math></li>
+        <li>An apparatus consisting of a ruler and a perpendicular object was set up to ensure that a consistent
+            1.50&nbsp;m drop height was observed, ensuring <math>
+                <mi>s</mi>
+                <mo>=</mo>
+                <mn>1.50</mn>
+                <mspace width="0.3em" />
+                <mi mathvariant="normal">m</mi>
+            </math></li>
+        <li>The gross mass of the cone was kept consistent as far as possible by using consistent paper, although the
+            masses of each of the cones were measured in order to be able to account for these changes (because,
+            naturally, given that different amounts of paper were used, this would vary slightly). Similarly, a
+            consistent additional mass was used between all trials.
+        </li>
+    </ul>
+    <h2>Results</h2>
+    <p><a href="media">All result videos can be accessed here</a>. They are organised by the angle of the remaining
+        sector used to create the cone.</p>
+    <p id="summary">Overall, there was some resemblance of a proportional relationship between the cross-sectional area
+        of the cone and the the time which it took to fall to the ground, however this relationship became less obvious
+        with larger areas.</p>
+    <details>
+        <summary>Full results table for data collected with stopwatch</summary>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="row">Sector angle</td>
+                    <th scope="col">22.5&deg;</th>
+                    <th scope="col">47&deg;</th>
+                    <th scope="col">90&deg;</th>
+                    <th scope="col">180&deg;</th>
+                    <th scope="col">226&deg;</th>
+                    <th scope="col">269&deg;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Trial 1</th>
+                    <td>0.93&nbsp;s</td>
+                    <td>0.91&nbsp;s</td>
+                    <td>0.66&nbsp;s</td>
+                    <td>0.50&nbsp;s</td>
+                    <td>0.47&nbsp;s</td>
+                    <td>0.69&nbsp;s</td>
+                </tr>
+                <tr>
+                    <th scope="row">Trial 2</th>
+                    <td>1.06&nbsp;s</td>
+                    <td>0.75&nbsp;s</td>
+                    <td>0.66&nbsp;s</td>
+                    <td>0.63&nbsp;s</td>
+                    <td>0.69&nbsp;s</td>
+                    <td>0.66&nbsp;s</td>
+                </tr>
+                <tr>
+                    <th scope="row">Trial 3</th>
+                    <td>0.88&nbsp;s</td>
+                    <td>0.84&nbsp;s</td>
+                    <td>0.66&nbsp;s</td>
+                    <td>0.56&nbsp;s</td>
+                    <td>0.37&nbsp;s</td>
+                    <td>0.40&nbsp;s</td>
+                </tr>
+                <tr>
+                    <th scope="row">Trial 4</th>
+                    <td>(null)</td>
+                    <td>(null)</td>
+                    <td>(null)</td>
+                    <td>(null)</td>
+                    <td>(null)</td>
+                    <td>0.56&nbsp;s</td>
+                </tr>
+                <tr>
+                    <th scope="row">Mean</th>
+                    <td>0.96&nbsp;s</td>
+                    <td>0.83&nbsp;s</td>
+                    <td>0.66&nbsp;s</td>
+                    <td>0.56&nbsp;s</td>
+                    <td>0.51&nbsp;s</td>
+                    <td>0.58&nbsp;s</td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
+    <details>
+        <summary>Full results table for data collected with 59.9&nbsp;Hz video camera</summary>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="row">Sector angle</td>
+                    <th scope="col">22.5&deg;</th>
+                    <th scope="col">47&deg;</th>
+                    <th scope="col">90&deg;</th>
+                    <th scope="col">180&deg;</th>
+                    <th scope="col">226&deg;</th>
+                    <th scope="col">269&deg;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Trial 1</th>
+                    <td>63&nbsp;frames =&nbsp;1.05&nbsp;s</td>
+                    <td>62&nbsp;frames =&nbsp;1.04&nbsp;s</td>
+                    <td>49&nbsp;frames =&nbsp;0.82&nbsp;s</td>
+                    <td>39&nbsp;frames =&nbsp;0.65&nbsp;s</td>
+                    <td>35&nbsp;frames =&nbsp;0.58&nbsp;s</td>
+                    <td>35&nbsp;frames =&nbsp;0.58&nbsp;s</td>
+                </tr>
+                <tr>
+                    <th scope="row">Trial 2</th>
+                    <td>65&nbsp;frames =&nbsp;1.09&nbsp;s</td>
+                    <td>62&nbsp;frames =&nbsp;1.04&nbsp;s</td>
+                    <td>51&nbsp;frames =&nbsp;0.85&nbsp;s</td>
+                    <td>40&nbsp;frames =&nbsp;0.67&nbsp;s</td>
+                    <td>35&nbsp;frames =&nbsp;0.58&nbsp;s</td>
+                    <td>35&nbsp;frames =&nbsp;0.58&nbsp;s</td>
+                </tr>
+                <tr>
+                    <th scope="row">Trial 3</th>
+                    <td>64&nbsp;frames =&nbsp;1.07&nbsp;s</td>
+                    <td>59&nbsp;frames =&nbsp;0.98&nbsp;s</td>
+                    <td>51&nbsp;frames =&nbsp;0.85&nbsp;s</td>
+                    <td>40&nbsp;frames =&nbsp;0.67&nbsp;s</td>
+                    <td>35&nbsp;frames =&nbsp;0.58&nbsp;s</td>
+                    <td>44&nbsp;frames =&nbsp;0.73&nbsp;s</td>
+                </tr>
+                <tr>
+                    <th scope="row">Trial 4</th>
+                    <td>(null)</td>
+                    <td>(null)</td>
+                    <td>(null)</td>
+                    <td>(null)</td>
+                    <td>(null)</td>
+                    <td>36&nbsp;frames =&nbsp;0.60&nbsp;s</td>
+                </tr>
+                <tr>
+                    <th scope="row">Mean</th>
+                    <td>1.07&nbsp;s</td>
+                    <td>1.02&nbsp;s</td>
+                    <td>0.84&nbsp;s</td>
+                    <td>0.66&nbsp;s</td>
+                    <td>0.58&nbsp;s</td>
+                    <td>0.63&nbsp;s</td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
+    <p>The data collected with the video camera is being treated as the main data used for analysis, as it is believed
+        that it is more accurate, due to there being less room for introduced human error based on reaction times for
+        stopping the stopwatch. The third trial for the 269&deg; cone should also be interpreted cautiously for two main
+        reasons:
+    </p>
+    <ol id="269-issues">
+        <li>the mass in the cone fell out during the drop, a consequence of not properly following the original method,
+            which would have included better securing it</li>
+        <li>the results between the stopwatch measurement and the camera measurement differ significantly: for the
+            stopwatch, the time is well below the mean, while for the camera, the time is well above the mean.</li>
+    </ol>
+    <p>Note that this third trial for the 269&deg; cone was kept in the means for completeness. It is hoped that the
+        additional trial undertaken for this cone will help to remove the error to some extent.</p>
+    <p>Considering this, although the times from the video camera have been deemed more accurate, a "super mean" has
+        been calculated by taking the means of both sets of results.</p>
+    <details open id="results-combined">
+        <summary>Combined mean results</summary>
+        <table>
+            <thead></thead>
+            <tr>
+                <th scope="row">Sector angle</td>
+                <th scope="col">22.5&deg;</th>
+                <th scope="col">47&deg;</th>
+                <th scope="col">90&deg;</th>
+                <th scope="col">180&deg;</th>
+                <th scope="col">226&deg;</th>
+                <th scope="col">269&deg;</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Mean (stopwatch)</th>
+                    <td>0.96&nbsp;s</td>
+                    <td>0.83&nbsp;s</td>
+                    <td>0.66&nbsp;s</td>
+                    <td>0.56&nbsp;s</td>
+                    <td>0.51&nbsp;s</td>
+                    <td>0.58&nbsp;s</td>
+                </tr>
+                <tr>
+                    <th scope="row">Mean (video)</th>
+                    <td>1.07&nbsp;s</td>
+                    <td>1.02&nbsp;s</td>
+                    <td>0.84&nbsp;s</td>
+                    <td>0.66&nbsp;s</td>
+                    <td>0.58&nbsp;s</td>
+                    <td>0.63&nbsp;s</td>
+                </tr>
+                <tr>
+                    <th scope="row">Combined mean</th>
+                    <td>1.01&nbsp;s</td>
+                    <td>0.93&nbsp;s</td>
+                    <td>0.75&nbsp;s</td>
+                    <td>0.61&nbsp;s</td>
+                    <td>0.55&nbsp;s</td>
+                    <td>0.60&nbsp;s</td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
+    <figure>
+        <iframe id="timechart" class="googlechart"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnWbXzAH3LvuupUuaGK8f9raK8NUFj7dtaAY0g4W8fg_JO0RGa0qMr7hbxbhobx9of8M27wtE2F2s8/pubchart?oid=1344448885&amp;format=interactive"></iframe>
+        <figcaption>Plot of the mean time to fall vs. the angle cut to make the paper cone, including linear
+            trendlines.<br />The mean from all three methods (the stopwatch, the video and the mean of both of those) is
+            shown.<br />Error bars represent the inherent measurement error in the equipment used (0.005 s).
+        </figcaption>
+    </figure>
+    <p>Notably, in the data, the hypothesis is supported until the 269&deg; cone, as the average time to fall was longer
+        than for the 226&deg; cone. This applies based on all three means.</p>
+    <p>Other data was also collected for the purposes of allowing drag force and co-efficients to be calculated more
+        effectively, based on the air conditions in the room which the experiment was conducted in. This is included,
+        alongside any other data collected, for completeness and reproducibility purposes below.</p>
+    <details>
+        <summary id="other-data">Other data</summary>
+        <table>
+            <tr>
+                <th scope="row">Base circle radius</th>
+                <td>75&nbsp;mm</td>
+            </tr>
+            <tr>
+                <th scope="row">Mean paper area density</th>
+                <td>73.8&nbsp;g&middot;m<sup>-2</sup></td>
+            </tr>
+            <tr>
+                <th scope="row">Mass of additional mass</th>
+                <td>1.98&nbsp;g</td>
+            </tr>
+            <tr>
+                <th scope="row">Drop height</th>
+                <td>1.50&nbsp;m</td>
+            </tr>
+            <tr>
+                <th scope="row">Air temperature</th>
+                <td>21&deg;C</td>
+            </tr>
+            <tr>
+                <th scope="row">Air pressure</th>
+                <td>1017.3&nbsp;hPa</td>
+            </tr>
+            <tr>
+                <th scope="row">Specific gas constant of air</th>
+                <td>287.052874&nbsp;J&middot;kg<sup>-1</sup>&middot;K<sup>-1</sup><br>(not measured)</td>
+            </tr>
+        </table>
+    </details>
+    <h3>Intermediate calculations</h3>
+    <h4>Cross-sectional area</h4>
+    <p>To calculate the cross-sectional area, <math>
+            <mi>A</mi>
+        </math> of each cone from the angle of the sector removed, <math>
+            <msub>
+                <mi>&theta;</mi>
+                <mi>removed</mi>
+            </msub>
+        </math> and the radius of the circle, <math>
+            <msub>
+                <mi>r</mi>
+                <mi>ci</mi>
+            </msub>
+        </math>, the following formula was used:</p>
+    <math display="block">
+        <mi>A</mi>
+        <mo>=</mo>
+        <mi>&pi;</mi>
+        <msup>
+            <mrow>
+                <mo>(</mo>
+                <mfrac>
+                    <mrow>
+                        <msub>
+                            <mi>r</mi>
+                            <mi>ci</mi>
+                        </msub>
+                        <mo>(</mo>
+                        <mn>360&deg;</mn>
+                        <mo>-</mo>
+                        <msub>
+                            <mi>&theta;</mi>
+                            <mi>removed</mi>
+                        </msub>
+                        <mo>)</mo>
+                    </mrow>
+                    <mrow>
+                        <mn>360&deg;</mn>
+                    </mrow>
+                </mfrac>
+                <mo>)</mo>
+            </mrow>
+            <mn>2</mn>
+        </msup>
+    </math>
+    <details>
+        <summary>Results</summary>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Angle removed</th>
+                    <th scope="col">Cross-sectional area</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">22.5&deg;</th>
+                    <td>0.0155&nbsp;m<sup>2</sup></td>
+                </tr>
+                <tr>
+                    <th scope="row">47&deg;</th>
+                    <td>0.0134&nbsp;m<sup>2</sup></td>
+                </tr>
+                <tr>
+                    <th scope="row">90&deg;</th>
+                    <td>0.00994&nbsp;m<sup>2</sup></td>
+                </tr>
+                <tr>
+                    <th scope="row">180&deg;</th>
+                    <td>0.00442&nbsp;m<sup>2</sup></td>
+                </tr>
+                <tr>
+                    <th scope="row">226&deg;</th>
+                    <td>0.00245&nbsp;m<sup>2</sup></td>
+                </tr>
+                <tr>
+                    <th scope="row">269&deg;</th>
+                    <td>0.00113&nbsp;m<sup>2</sup></td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
+    <h4>Air density</h4>
+    <p>Applying <math>
+            <mi>&rho;</mi>
+            <mo>=</mo>
+            <mfrac>
+                <mrow>
+                    <mi>p</mi>
+                </mrow>
+                <mrow>
+                    <msub>
+                        <mi>R</mi>
+                        <mi>specific</mi>
+                    </msub>
+                    <mi>T</mi>
+                </mrow>
+            </mfrac>
+        </math> with the data relating to the air above gives <math>
+            <mi>p</mi>
+            <mo>=</mo>
+            <mn>1017.3</mn>
+            <mspace width="0.3em" />
+            <mi>hPa</mi>
+        </math>, <math>
+            <msub>
+                <mi>R</mi>
+                <mi>specific</mi>
+            </msub>
+            <mo>=</mo>
+            <mn>287.052874</mn>
+            <mspace width="0.3em" />
+            <mi mathvariant="normal">J</mi>
+            <mo>&middot;</mo>
+            <msup>
+                <mi>kg</mi>
+                <mn>-1</mn>
+            </msup>
+            <mo>&middot;</mo>
+            <msup>
+                <mi mathvariant="normal">K</mi>
+                <mn>-1</mn>
+            </msup>
+        </math> and <math>
+            <mi>T</mi>
+            <mo>=</mo>
+            <mn>21</mn>
+            <mi>&deg;C</mi>
+        </math>, and thus that <math>
+            <mi>&rho;</mi>
+            <mo>=</mo>
+            <mn>1.2</mn>
+            <mspace width="0.3em" />
+            <mi>kg</mi>
+            <mo>&middot;</mo>
+            <msup>
+                <mi mathvariant="normal">m</mi>
+                <mn>-3</mn>
+            </msup>
+        </math>, which is approximately air's density, according to the International Standard Atmosphere (Wikipedia
+        contributors, 2024a).</p>
+    <h4>Drag</h4>
+    <p>The drag force can be calculated from the SUVAT equations and Newton's second law (assuming that drag and gravity
+        are the
+        only forces operating, and they are operating parallel) as follows:</p>
+    <details>
+        <summary>Formula and derivation</summary>
+        <math display="block">
+            <msub>
+                <mi>F</mi>
+                <msub>
+                    <mi>net</mi>
+                    <mi>av</mi>
+                </msub>
+            </msub>
+            <mo>=</mo>
+            <mi>m</mi>
+            <msub>
+                <mi>a</mi>
+                <mi>av</mi>
+            </msub>
+            <mo>=</mo>
+            <msub>
+                <mi>F</mi>
+                <mi>&uparrow;</mi>
+            </msub>
+            <mo>+</mo>
+            <msub>
+                <mi>F</mi>
+                <mi>&downarrow;</mi>
+            </msub>
+        </math>
+        <math display="block">
+            <mtext>Let</mtext>
+            <mspace width="0.4em" />
+            <msub>
+                <mi>F</mi>
+                <mi>&downarrow;</mi>
+            </msub>
+            <mo>=</mo>
+            <mi>m</mi>
+            <mi>g</mi>
+        </math>
+        <math display="block">
+            <mtext>Let</mtext>
+            <mspace width="0.4em" />
+            <msub>
+                <mi>F</mi>
+                <mi>&uparrow;</mi>
+            </msub>
+            <mo>=</mo>
+            <msub>
+                <mi>F</mi>
+                <mi>D</mi>
+            </msub>
+            <mo>=</mo>
+            <mfrac>
+                <mrow>
+                    <mn>1</mn>
+                </mrow>
+                <mrow>
+                    <mn>2</mn>
+                </mrow>
+            </mfrac>
+            <mi>&rho;</mi>
+            <msup>
+                <mi>v</mi>
+                <mn>2</mn>
+            </msup>
+            <msub>
+                <mi>C</mi>
+                <mi>D</mi>
+            </msub>
+            <mi>A</mi>
+        </math>
+        <math display="block">
+            <mtable>
+                <mtr>
+                    <mtd></mtd>
+                    <mtd>
+                        <mi>s</mi>
+                        <mo>=</mo>
+                        <mi>u</mi>
+                        <mi>t</mi>
+                        <mo>+</mo>
+                        <mfrac>
+                            <mn>1</mn>
+                            <mn>2</mn>
+                        </mfrac>
+                        <mi>a</mi>
+                        <msup>
+                            <mi>t</mi>
+                            <mn>2</mn>
+                        </msup>
+                    </mtd>
+                    <mtd>
+                        <mtext>but</mtext>
+                        <mspace width="0.4em" />
+                        <mi>u</mi>
+                        <mo>=</mo>
+                        <mn>0</mn>
+                    </mtd>
+                </mtr>
+                <mtr>
+                    <mtd>
+                        <mtext>&therefore;</mtext>
+                    </mtd>
+                    <mtd>
+                        <mi>s</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mn>1</mn>
+                            <mn>2</mn>
+                        </mfrac>
+                        <mi>a</mi>
+                        <msup>
+                            <mi>t</mi>
+                            <mn>2</mn>
+                        </msup>
+                    </mtd>
+                </mtr>
+                <mtr>
+                    <mtd>
+                        <mtext>&therefore;</mtext>
+                    </mtd>
+                    <mtd>
+                        <mi>a</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mn>2</mn>
+                                <mi>s</mi>
+                            </mrow>
+                            <mrow>
+                                <msup>
+                                    <mi>t</mi>
+                                    <mn>2</mn>
+                                </msup>
+                            </mrow>
+                        </mfrac>
+                    </mtd>
+                </mtr>
+                <mtr>
+                    <mtd>
+                        <mtext>&therefore;</mtext>
+                    </mtd>
+                    <mtd>
+                        <msub>
+                            <mi>F</mi>
+                            <mi>D</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mn>2</mn>
+                                <mi>m</mi>
+                                <mi>s</mi>
+                            </mrow>
+                            <mrow>
+                                <msup>
+                                    <mi>t</mi>
+                                    <mn>2</mn>
+                                </msup>
+                            </mrow>
+                        </mfrac>
+                        <mo>-</mo>
+                        <mi>m</mi>
+                        <mi>g</mi>
+                    </mtd>
+            </mtable>
+        </math>
+    </details>
+    <details>
+        <summary>Results for drag force</summary>
+        <h5>Using the video results</h5>
+        <table id="drag-force-results">
+            <thead>
+                <tr>
+                    <th scope="col">Angle removed</th>
+                    <th scope="col">Drag force</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">22.5&deg;</th>
+                    <td>0.0227&nbsp;N</td>
+                </tr>
+                <tr>
+                    <th scope="row">47&deg;</th>
+                    <td>0.0214&nbsp;N</td>
+                </tr>
+                <tr>
+                    <th scope="row">90&deg;</th>
+                    <td>0.0164&nbsp;N</td>
+                </tr>
+                <tr>
+                    <th scope="row">180&deg;</th>
+                    <td>0.00781&nbsp;N</td>
+                </tr>
+                <tr>
+                    <th scope="row">226&deg;</th>
+                    <td>0.00251&nbsp;N</td>
+                </tr>
+                <tr>
+                    <th scope="row">269&deg;</th>
+                    <td>0.00496&nbsp;N</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5>Using the combined results</h5>
+        <table id="drag-force-results-combined">
+            <thead>
+                <tr>
+                    <th scope="col">Angle removed</th>
+                    <th scope="col">Drag force</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">22.5&deg;</th>
+                    <td>0.0218&nbsp;N</td>
+                </tr>
+                <tr>
+                    <th scope="row">47&deg;</th>
+                    <td>0.0195&nbsp;N</td>
+                </tr>
+                <tr>
+                    <th scope="row">90&deg;</th>
+                    <td>0.0132&nbsp;N</td>
+                </tr>
+                <tr>
+                    <th scope="row">180&deg;</th>
+                    <td>0.00478&nbsp;N</td>
+                </tr>
+                <tr>
+                    <th scope="row">226&deg;</th>
+                    <td>-0.000548&nbsp;N</td>
+                </tr>
+                <tr>
+                    <th scope="row">269&deg;</th>
+                    <td>0.00350&nbsp;N</td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
+    <details open>
+        <summary>Results for drag co-efficient</summary>
+        <p>Formula used for drag co-efficient: <math>
+                <msub>
+                    <mi>C</mi>
+                    <mi>D</mi>
+                </msub>
+                <mo>=</mo>
+                <mfrac>
+                    <mrow>
+                        <mn>2</mn>
+                        <msub>
+                            <mi>F</mi>
+                            <mi>D</mi>
+                        </msub>
+                    </mrow>
+                    <mrow>
+                        <mi>&rho;</mi>
+                        <mo>&InvisibleTimes;</mo>
+                        <msup>
+                            <mi>v</mi>
+                            <mn>2</mn>
+                        </msup>
+                        <mo>&InvisibleTimes;</mo>
+                        <mi>A</mi>
+                    </mrow>
+                </mfrac>
+            </math></p>
+        <h5>Using the video results</h5>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Angle removed</th>
+                    <th scope="col">Drag co-efficient</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">22.5&deg;</th>
+                    <td>1.11</td>
+                </tr>
+                <tr>
+                    <th scope="row">47&deg;</th>
+                    <td>1.01</td>
+                </tr>
+                <tr>
+                    <th scope="row">90&deg;</th>
+                    <td>0.684</td>
+                </tr>
+                <tr>
+                    <th scope="row">180&deg;</th>
+                    <td>0.490</td>
+                </tr>
+                <tr>
+                    <th scope="row">226&deg;</th>
+                    <td>0.227</td>
+                </tr>
+                <tr>
+                    <th scope="row">269&deg;</th>
+                    <td>1.17</td>
+                </tr>
+            </tbody>
+        </table>
+        <figure>
+            <iframe id="dragcoeffchart" class="googlechart"
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnWbXzAH3LvuupUuaGK8f9raK8NUFj7dtaAY0g4W8fg_JO0RGa0qMr7hbxbhobx9of8M27wtE2F2s8/pubchart?oid=379761971&amp;format=interactive"></iframe>
+            <figcaption>Plot of the calculated drag co-efficient vs. the angle cut to make the paper cone.</figcaption>
+        </figure>
+        <h5>Using the combined results</h5>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Angle removed</th>
+                    <th scope="col">Drag co-efficient</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">22.5&deg;</th>
+                    <td>1.06</td>
+                </tr>
+                <tr>
+                    <th scope="row">47&deg;</th>
+                    <td>0.925</td>
+                </tr>
+                <tr>
+                    <th scope="row">90&deg;</th>
+                    <td>0.551</td>
+                </tr>
+                <tr>
+                    <th scope="row">180&deg;</th>
+                    <td>0.300</td>
+                </tr>
+                <tr>
+                    <th scope="row">226&deg;</th>
+                    <td>-0.0494</td>
+                </tr>
+                <tr>
+                    <th scope="row">269&deg;</th>
+                    <td>0.828</td>
+                </tr>
+            </tbody>
+        </table>
+        <figure>
+            <iframe id="dragcoeffchart-combined" class="googlechart"
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSnWbXzAH3LvuupUuaGK8f9raK8NUFj7dtaAY0g4W8fg_JO0RGa0qMr7hbxbhobx9of8M27wtE2F2s8/pubchart?oid=1739131557&amp;format=interactive"></iframe>
+            <figcaption>Plot of the calculated drag co-efficient vs. the angle cut to make the paper cone.<br />The
+                negative value is likely due to random experimental error, particularly in measurement.</figcaption>
+        </figure>
+    </details>
+    <h2 id="discussion">Discussion</h2>
+    <p>Overall, particularly with the video results, there was a clear downward trend within the data. It is difficult
+        to tell whether this fits a linear model based on the data collected, considering the significant gap in the
+        data between 90&deg; and 180&deg;. If the experiment were to be run again, it would be worth collecting data for
+        at least one point within this interval.</p>
+    <h3>Errors</h3>
+    <p>There were two significant errors which occurred during the running of the experiment, which were clearly visible
+        in the data:</p>
+    <h4>226&deg; cone negative drag</h4>
+    <p>The drag co-efficient for the cone from the 226&deg; sector was negative, which should not be possible. This
+        negative drag co-efficient is a result of the <a href="#drag-force-results">drag force being calculated as
+            -0.000548&nbsp;N</a>. Practically, this result
+        means that the measured acceleration was greater <span class="nowrap">than <math>
+                <mi>g</mi>
+            </math>, 9.8 m&middot;s<sup>-2</sup>,</span> and so the drag force had to work downwards to provide a great
+        enough downward force to cause that level of acceleration. This does not follow expectations of drag, and points
+        strongly towards error, especially considering that this was only observed for one cone, in one measurement system, and only three trials
+        were undertaken, limiting the effectiveness of multiple repetitions for reducing random error.</p>
+    <p>Given that the error was only found in the combined mean, significant measurement
+        error while using the stopwatch is strongly suggested, owing greater authority to the video results, given their apparent greater
+        accuracy.</p>
+    <h4>269&deg; outlier</h4>
+    <p>By both measurement systems, the 269&deg; cone presents itself as an outlier, with its drag coefficient being
+        significantly higher than expected for such a pointy "streamlined" design. Again, it is likely that this was
+        caused by some form of error in the dropping process or during the measurement, particularly considering that
+        there were already <a href="#269-issues">potential problems</a> identified with this cone's drop process. Again,
+        although an additional trial was conducted with the cone, it was insufficient at negating this error in
+        the data. Aside from the already identified problems, this outlier could be caused by the cone rotating during
+        the fall, and hence increasing its cross-sectional area during the fall. This possibility was not accounted for
+        in the calculation of the drag co-efficient, as it was assumed to be consistent throughout the fall.</p>
+    <p>Aside from running additional trials (the preferred remedy), it may be possible to remove the most problematic
+        data point, however this may not be an ideal solution as the trial was technically performed correctly, and thus
+        otherwise usable data would be discarded. This could be especially problematic with such a small dataset.</p>
+    <h2>Conclusion</h2>
+    <p>In line with assumptions and the hypothesis, the experiment makes it evident that pointier shapes experience less
+        drag than flatter shapes. This knowledge may be useful in designing things which need to travel through fluids
+        in some way, whether they demand more (e.g. parachutes) or less (e.g. planes) drag. Despite this, the additional
+        instability introduced with more streamlined shapes (i.e. those with sharper noses) may outweigh the inherent
+        reduced drag due to the rotation which could occur. Further research on this subject may be beneficial, however
+        this suggests overall that there may be a limit to how much drag can be theoretically reduced for some
+        applications without introducing excessive instability to the object.</p>
+    <h2>References</h2>
+    <ul id="ref-list">
+        <li>Wikipedia contributors. (<time datetime="2024-06-11">2024a, June 11</time>). Density of air. In
+            <cite>Wikipedia, The Free Encyclopedia</cite>. Retrieved <time datetime="2024-09-03">September 3,
+                2024</time>, from <a
+                href="https://en.wikipedia.org/w/index.php?title=Density_of_air&oldid=1228461341">https://en.wikipedia.org/w/index.php?title=Density_of_air&oldid=1228461341</a>
+        </li>
+        <li>Wikipedia contributors. (<time datetime="2024-08-12">2024b, August 12</time>). Drag (physics). In
+            <cite>Wikipedia, The Free Encyclopedia</cite>. Retrieved <time datetime="2024-09-03">September 3,
+                2024</time>, from <a
+                href="https://en.wikipedia.org/w/index.php?title=Drag_(physics)&oldid=1239858611">https://en.wikipedia.org/w/index.php?title=Drag_(physics)&oldid=1239858611</a>
+        </li>
+        <li>Wikipedia contributors. (<time datetime="2024-05-31">2024c, May 31</time>). Terminal velocity. In
+            <cite>Wikipedia, The Free Encyclopedia</cite>. Retrieved <time datetime="2024-09-16">September 16,
+                2024</time>, from <a
+                href="https://en.wikipedia.org/w/index.php?title=Terminal_velocity&oldid=1226583260">https://en.wikipedia.org/w/index.php?title=Terminal_velocity&oldid=1226583260</a>
+        </li>
+    </ul>
+</body>
+
+</html>

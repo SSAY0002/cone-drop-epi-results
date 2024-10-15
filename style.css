@@ -1,0 +1,63 @@
+#summary {
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+}
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+    -webkit-user-select: none;
+}
+details[open] > summary {
+    padding-bottom: 0.5cap;
+}
+details {
+    margin-top: 1cap;
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    color: black;
+    padding-top: 0.5cap;
+    padding-bottom: 0.5cap;
+}
+details > :not(summary) {
+    margin-left: 1em;
+}
+table, td, th {
+    border: black 2px solid;
+}
+table {
+    border-collapse: collapse;
+}
+.googlechart {
+    width: 600px;
+    height: 371px;
+    border: none;
+}
+figure {
+    border: grey solid 2px;
+    width: fit-content;
+    background-color: white;
+    color: black;
+}
+figcaption {
+    text-align: center;
+    font-size: smaller;
+}
+a, .nowrap {
+    white-space: nowrap;
+}
+#ref-list > li {
+    padding-left: 0.5in;
+    line-height: 200%;
+}
+#ref-list > li::first-letter {
+    margin-left: -0.5in; /* Produces a hanging indent */
+}
+#sector-red-ref {
+    background-color: #ff8080;
+    color: black;
+    border-radius: 4pt;
+    padding-left: 2pt;
+    padding-right: 2pt;
+}

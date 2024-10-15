@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="600" height="600" version="1.1" viewBox="0 0 158.75 158.75" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <title>Experimental setup</title>
+ <defs>
+  <marker id="Arrow1" overflow="visible" markerHeight="6.7071066" markerWidth="4.0606599" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 4.0606602 6.7071068">
+   <path transform="rotate(180 .125 0)" d="m3-3-3 3 3 3" fill="none" stroke="context-stroke"/>
+  </marker>
+ </defs>
+ <g>
+  <g>
+   <path id="measureStick" d="m126.18 13.229v132.29" stroke="#000" stroke-width=".66119">
+    <title>Measuring stick (ruler)</title>
+   </path>
+   <path id="floor" d="m158.75 145.3h-158.75" stroke="#000" stroke-width=".43587"/>
+   <path id="dropHeightIndicator" d="m125.85 44.579h-40.088" stroke="#f00" stroke-width=".42307">
+    <desc>Stick at 1.5 metre height from ground (set up perpendicular to the measuring stick), as an indicator for the appropriate drop height.</desc>
+    <title>Drop height indicator</title>
+   </path>
+  </g>
+  <text id="heightLabel" x="127.3559" y="45.548763" fill="#ff0000" font-size="3.175px" stroke="#ff0000" stroke-width=".26458" xml:space="preserve"><tspan x="127.3559" y="45.548763" fill="#ff0000" stroke-width=".26458">1.5 metres</tspan></text>
+  <g id="cone">
+   <title>Cone</title>
+   <g stroke="#00f">
+    <path id="coneL" d="m85.694 44.409c-8.158-14.13-8.2318-14.258-8.2318-14.258" fill="#00f" stroke-width=".26458"/>
+    <path id="coneR" d="m85.752 44.406 8.2268-14.253" fill="#00f" stroke-width=".27024"/>
+    <path id="coneTO" d="m77.391 30.221c8.4263-3.9905 16.672-.0033 16.672-.0033" fill="none" stroke-width=".26458"/>
+    <path id="coneTI" d="m77.391 30.107c8.4263 3.9905 16.672.0033 16.672.0033" fill="none" stroke-width=".26458"/>
+   </g>
+  </g>
+  <text id="noScale" x="6.0271125" y="8.7915697" fill="#000000" font-size="3.175px" stroke="#000000" stroke-width=".13203" xml:space="preserve"><tspan x="6.0271125" y="8.7915697" fill="#000000" font-family="sans-serif" font-style="italic" stroke="#000000" stroke-width=".13203">Diagram not to scale</tspan></text>
+  <path id="lengthS" d="m85.659 44.633v100.63" fill="#f0f" marker-end="url(#Arrow1)" marker-start="url(#Arrow1)" stroke="#f0f" stroke-dasharray="0.39661041, 0.39661041" stroke-width=".39661">
+   <desc>Measured from the tip of the cone to the ground</desc>
+   <title marker-end="url(#Arrow1)" marker-start="url(#Arrow1)">Drop distance (s)</title>
+  </path>
+  <text x="55.620323" y="92.774673" fill="#ff00ff" font-family="sans-serif" font-size="3.175px" font-style="italic" stroke="#ff00ff" stroke-width=".26432" xml:space="preserve"><tspan x="55.620323" y="92.774673">s<tspan font-family="sans-serif" font-style="normal">, measured from </tspan></tspan><tspan x="55.620323" y="96.743423"><tspan font-family="sans-serif" font-style="normal">cone tip to ground</tspan></tspan></text>
+ </g>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:title>Experimental setup</dc:title>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Zac Sayle</dc:title>
+     </cc:Agent>
+    </dc:creator>
+    <dc:language>en</dc:language>
+    <dc:date>2024-10-14</dc:date>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+   </cc:Work>
+   <cc:License rdf:about="http://creativecommons.org/licenses/by/4.0/">
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+    <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"/>
+    <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"/>
+    <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+   </cc:License>
+  </rdf:RDF>
+ </metadata>
+</svg>
