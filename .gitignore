@@ -1,2 +1,3 @@
 # For privacy reasons, the media directory is ignored
 media/*
+!media/index.html
